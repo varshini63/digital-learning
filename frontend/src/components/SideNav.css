@@ -1,0 +1,43 @@
+/* SideNav.css */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 120px; /* Start below navbar */
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+  }
+  
+  .nav-item {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  .nav-item.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .nav-item.active:hover {
+    background-color: #0056b3;
+  }

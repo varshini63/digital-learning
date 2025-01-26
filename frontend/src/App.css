@@ -1,0 +1,156 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* SideNav Styling */
+/* Adjusted SideNav Styling */
+.sidenav {
+  position: fixed;
+  top: 60px; /* Offset by the navbar height (60px) */
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px); /* Adjust height to fit below the navbar */
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidenav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav a:hover {
+  background-color: #28a745; /* Green hover effect */
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.with-sidenav {
+  margin-left: 250px;
+}
+
+/* Profile Section Styling */
+.profile-section {
+  background-color: white;
+  padding: 40px 50px; /* Adjusted padding for box appearance */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Border shadow effect */
+  max-width: 800px; /* Restrict maximum width for better alignment */
+  width: 100%;
+  border: 3px solid #28a745; /* Highlighted green border */
+  text-align: center;
+  line-height: 1.8; /* Spacing between lines */
+}
+
+/* Profile Section Headings */
+.profile-section h2 {
+  color: #28a745; /* Green text color */
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile-section p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Button Styling */
+button {
+  background-color: #28a745; /* Green button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green for hover */
+}
+
+/* Input and Selection Styling */
+input[type="text"], select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #218838; /* Darker green on focus */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Subtle green glow */
+}
+
+/* Ensure Other Sections Have No Box */
+.other-section {
+  margin-top: 20px;
+  padding: 10px;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #343a40; /* Dark background to match sidebar */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745; /* Green heading text for consistency */
+}
+
+/* Adjustments for Main Content to Account for Navbar */
+.main-content {
+  padding-top: 80px; /* Add space to avoid content overlapping with the navbar */
+}

@@ -1,0 +1,44 @@
+.practical-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .guidelines {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .draggable-item {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    cursor: grab;
+  }
+  
+  .drop-area {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #999;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .guidelines ul {
+    list-style-type: disc; /* Adds bullet points */
+    margin-left: 20px;
+  }
+  
+  .guidelines li {
+    margin-bottom: 10px;
+  }
+  
